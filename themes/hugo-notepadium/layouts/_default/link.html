@@ -1,0 +1,15 @@
+{{- define "main" -}}
+<div style="text-align: center;">
+    <h1>友情链接</h1>
+</div>
+{{- range .Site.Params.link -}}
+
+{{- $url := .url | safeURL -}}
+{{- if strings.HasPrefix $url "/" -}}
+{{- $url = $url | relLangURL -}}
+{{- end -}}
+
+<p><a href="{{- $url -}}" {{- if strings.HasPrefix $url "http" -}}target="_blank"
+    {{- end -}} rel="nofollow noopener noreferrer">{{- .title -}}</a></p>
+{{ end }}
+{{ end }}

@@ -1,0 +1,86 @@
+baseURL = ""
+title = "WTFSec"
+theme = "hugo-notepadium"
+copyright = "©2014-2020 WTFSec."
+
+hasCJKLanguage = true
+
+enableRobotsTXT = true
+paginate = 5
+
+defaultContentLanguage = "zh"
+
+	
+# Enable Disqus
+#disqusShortname = "XXX"
+
+# Google Analytics
+googleAnalytics = "UA-83215806-1"
+
+[markup.highlight]
+codeFences = true
+noClasses = false
+
+[markup.goldmark.renderer]
+unsafe = true  # enable raw HTML in Markdown
+
+[params]
+style = "light"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
+dateFormat = "Monday, January 2, 2006"  # if unset, default is "2006-01-02"
+logo = ""  # if you have a logo png
+#slogan = ""
+#license = ""  # CC License
+
+[params.comments]
+enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
+
+[params.math]
+enable = false  # optional: true, false. Enable globally, default: false. You can always enable math on per page.
+use = "katex"  # option: "katex", "mathjax". default: "katex"
+
+[params.syntax]
+use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
+theme = "xcode"
+darkTheme = "xcode-dark"  # apply this theme in dark mode
+
+[params.nav]
+showCategories = true       # /categories/
+showTags = true             # /tags/
+
+# custom navigation items
+
+#[[params.nav.custom]]
+#title = "About"
+#url = "/about"
+
+[[params.nav.custom]]
+    title = "友链"
+    url = "/link/"
+
+[[params.link]]
+    title = "WTFSec"
+    url = "/"
+
+[[params.link]]
+    title = "CloudFlare Partner"
+    url = "https://cf.wtfsec.org/"
+
+[[params.link]]
+    title = "XSS平台"
+    url = "https://r5.lt/"
+
+[[params.link]]
+    title = "棉被家族"
+    url = "https://www.quilt.idv.tw/"
+
+[[params.link]]
+    title = "核攻击"
+    url = "https://lcx.cc/"
+	
+#Google 相關
+[params.google]
+	#Google 自訂搜尋
+	#搜尋引擎 ID
+	cx = "007577642968354120273:ncyfb4pd0xu"
+	#Google 自動化廣告 
+	adsense = "ca-pub-4220670081232153"
