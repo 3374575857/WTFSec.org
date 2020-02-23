@@ -7,7 +7,7 @@ categories = ["原创"]
 tags = ["代码审计","PHP","SQL注入"]
 
 +++
-Vulnerability file: admin\controllers\database.php
+Vulnerability file: admin\controllers\database.php<!--more-->
 {{< highlight php >}}
 private function EmptyTable($tablename)
 {

