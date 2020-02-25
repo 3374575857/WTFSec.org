@@ -69,7 +69,8 @@ def send_email( to, subject, body, attachment_file, body_type="html" ):
             auth=("api", settings["mailgun_api_key"] ),
             callback=email_sent_callback)
 {{< /highlight >}}
-懒得改这段代码，就按照他的请求模拟一个发邮件的API，一下代码适用于Apache+PHP：
+懒得改这段代码，就按照他的请求模拟一个发邮件的API，以下代码适用于Apache+PHP：
+
 先安装PHPMailer：
 ```
 composer require phpmailer/phpmailer
