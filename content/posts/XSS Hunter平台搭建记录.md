@@ -102,6 +102,14 @@ if (isset($_SERVER['HTTP_AUTHORIZATION'])) {
                 @$to = urldecode($_POST['to']);
                 @$subject = urldecode($_POST['subject']);
                 @$html = urldecode($_POST['html']);
+                @$text = urldecode($_POST['text']);
+                if ($html != ""){
+                    $mail->isHTML(true);
+                    $mail->Body = $html;
+                }else if ($text != ""){
+                    $mail->isHTML(false);
+                    $mail->Body = $text;
+                }
                 try {
                     $mail->isSMTP();
                     $mail->Host = 'smtp地址';
@@ -112,9 +120,7 @@ if (isset($_SERVER['HTTP_AUTHORIZATION'])) {
                     $mail->Port = 587;
                     $mail->setFrom('发信地址，也可以用$from', '昵称(选填)');
                     $mail->addAddress($to);
-                    $mail->isHTML(true);
                     $mail->Subject = $subject;
-                    $mail->Body = $html;
                     $mail->send();
                     echo 'Mail sent to ' . $to . ' status: OK'; //这边会在xss平台打印出来
                 } catch (Exception $e) {
