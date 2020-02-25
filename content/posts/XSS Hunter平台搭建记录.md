@@ -8,7 +8,8 @@ tags = ["XSS","笔记"]
 +++
 
 > XSS Hunter：[https://github.com/mandatoryprogrammer/xsshunter/](https://github.com/mandatoryprogrammer/xsshunter/)
-The XSS Hunter service - a portable version of XSSHunter.com<!--more-->
+>
+>The XSS Hunter service - a portable version of XSSHunter.com<!--more-->
 
 ## 搭建需求：
 + 服务器最好是Ubuntu

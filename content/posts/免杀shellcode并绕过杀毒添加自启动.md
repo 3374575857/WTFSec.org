@@ -7,6 +7,7 @@ tags = ["免杀","shellcode"]
 +++
 首先得处理好shellcode，尽量把添加自启动的操作独立成一个Loader，可以避免杀毒软件检测到特征并拦截，这边选择的是利用Javascript来处理Shellcode，而添加自启动的操作由C#来控制，并成功实现了绕过360核晶防护添加计划任务完成木马自启动。<!--more--> 
 Shellcode的部分用CACTUSTORCH完成，链接：[CACTUSTORCH](https://github.com/mdsecactivebreach/CACTUSTORCH)
+
 也可以自己C#编译一个再用DotNetToJScript转Javascript语言，教程：[免杀 MSF Windows Payload 的方法与实践](../免杀-msf-windows-payload-的方法与实践/)
 
 处理完的js脚本，推荐使用sojson的混淆代码，可以实现virustotal的57引擎0报毒，链接：[Js加密](https://www.sojson.com/jsobfuscator.html)，我一个18年处理的msf shellcode到现在还是0报毒。
@@ -50,4 +51,5 @@ IRegisteredTask regTask =
 IRunningTask runTask = regTask.Run(null);
 {{< /highlight >}}
 程序添加完自启动，还能顺便把上面网络加载的js脚本释放出来并运行，到发布日期0217能过各种主流杀毒不被查杀并正常上线。![](https://cdn.wtfsec.org/img/20200222165121.png)
+
 相关代码已经发布在Github上，链接：[https://github.com/Hzllaga/JsLoader](https://github.com/Hzllaga/JsLoader)
