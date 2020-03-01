@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://wtfsec.org"
 title = "WTFSec"
 theme = "hugo-notepadium"
 copyright = "©2014-2020 WTFSec."
