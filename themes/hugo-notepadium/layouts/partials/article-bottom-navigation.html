@@ -1,8 +1,0 @@
-<div class="article navigation">
-    {{- if .NextInSection -}}
-    <p><a class="link" href="{{ .NextInSection.Permalink }}"><span class="li">&larr;</span>{{- .NextInSection.Title -}}</a>
-        {{- end -}}
-        {{- if .PrevInSection -}}
-    <p><a class="link" href="{{- .PrevInSection.Permalink -}}"><span class="li">&rarr;</span>{{- .PrevInSection.Title -}}</a></p>
-    {{- end -}}
-</div>
