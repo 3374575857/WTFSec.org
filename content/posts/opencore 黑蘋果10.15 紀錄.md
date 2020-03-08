@@ -107,7 +107,7 @@ Enabled -> True
 
 把`USBPorts.kext` 複製到opencore對應的目錄(`efi/oc/Kexts`)中，並且在配置文件中引入這個kext文件。
 
-![](https://cdn.wtfsec.org/img/20200229008.png)
+![](https://cdn.wtfsec.org/img/20200308200859.png)
 
 
 最後再把剛設定的15端口補丁設置為False `Kernel -> Quirks -> XhciPortLimit -> False`
