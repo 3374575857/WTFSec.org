@@ -8,7 +8,7 @@ hasCJKLanguage = true
 enableRobotsTXT = true
 paginate = 5
 
-defaultContentLanguage = "zh"
+defaultContentLanguage = "zh-cn"
 
 	
 # Enable Disqus
