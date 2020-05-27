@@ -1,5 +1,5 @@
 +++
-title = "ShellcodeLoader - 自动化编译成免杀的shellcode"
+title = "ShellcodeLoader"
 author = "Hzllaga"
 date =  2020-05-26 
 description = "将shellcode用rsa加密并动态编译exe，自带几种反沙箱技术。"
