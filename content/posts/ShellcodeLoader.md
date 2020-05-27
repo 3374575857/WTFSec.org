@@ -1,7 +1,7 @@
 +++
 title = "ShellcodeLoader"
 author = "Hzllaga"
-date =  2019-05-26 
+date =  2020-05-26 
 description = "将shellcode用rsa加密并动态编译exe，自带几种反沙箱技术。"
 categories = ["原创"]
 tags = ["免杀","shellcode",".NET"]
