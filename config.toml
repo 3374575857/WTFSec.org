@@ -76,6 +76,10 @@ showTags = true             # /tags/
 [[params.link]]
     title = "核攻击"
     url = "https://lcx.cc/"
+    
+[[params.link]]
+    title = "Noth"
+    url = "https://noth1998.blogspot.com/"
 	
 #Google 相關
 [params.google]
