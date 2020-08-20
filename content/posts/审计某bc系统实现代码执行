@@ -1,7 +1,7 @@
 +++
 title = "审计某bc系统实现代码执行"
 author = "Hzllaga"
-date =  2020-08-20 
+date =  2020-08-19 
 description = "朋友发给我一个bc系统让我审计，记录下过程。"
 categories = ["原创"]
 tags = ["代码审计","RCE","PHP"]
