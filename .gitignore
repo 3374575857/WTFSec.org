@@ -10,3 +10,13 @@ $RECYCLE.BIN/
 
 # OSX
 .DS_Store
+
+# Default ignored files
+/shelf/
+/.idea/workspace.xml
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+/.idea/
