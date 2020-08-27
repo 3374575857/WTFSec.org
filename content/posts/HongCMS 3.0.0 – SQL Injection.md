@@ -4,7 +4,7 @@ author = "Hzllaga"
 date =  2018-06-29
 description = ""
 categories = ["原创"]
-tags = ["代码审计","PHP","SQL注入"]
+tags = ["代码审计","PHP","SQL注入","CVE"]
 
 +++
 Vulnerability file: admin\controllers\database.php<!--more-->
