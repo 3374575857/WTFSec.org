@@ -4,7 +4,7 @@ author = "Hzllaga"
 date =  2018-07-17
 description = "MSVOD V10 – SQL Injection via /images/lists The $cid parameter controllable."
 categories = ["原创"]
-tags = ["PHP","SQL注入"]
+tags = ["PHP","SQL注入","CVE"]
 
 +++
 MSVOD V10 – SQL Injection via /images/lists
