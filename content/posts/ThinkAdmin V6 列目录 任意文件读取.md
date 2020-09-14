@@ -279,3 +279,5 @@ Windows读取`database.php`：
 ![](https://cdn.wtfsec.org/img/20200827165154.png)
 
 V5连允许列表都没有，可以直接读任意文件。
+
+CVE: [CVE-2020-25540](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25540)
